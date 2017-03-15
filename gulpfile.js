@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass');
-    csso = require('gulp-csso');
 
 gulp.task('sass', function () {
   gulp.src('sass/*.sass')
