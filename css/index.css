@@ -1,2 +1,11 @@
-p {
-  text-align: center; }
+.panel-profile .panel-heading {
+  height: 120px;
+  background-image: url("../images/concrete_wall.png"); }
+
+.panel-profile .panel-profile-img {
+  max-width: 100px;
+  margin-top: -70px;
+  margin-bottom: 5px;
+  border: 3px solid #fff;
+  border-radius: 30%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
