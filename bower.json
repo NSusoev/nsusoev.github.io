@@ -1,0 +1,22 @@
+{
+  "name": "nsusoev.github.io",
+  "homepage": "https://github.com/NSusoev/nsusoev.github.io",
+  "description": "my personal page",
+  "main": "",
+  "authors": [
+    "Nikita Susoev"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "raphael": "^2.2.7",
+    "angular": "^1.6.2"
+  }
+}
