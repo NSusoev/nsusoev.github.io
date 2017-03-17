@@ -17,7 +17,6 @@ for (var i = 0; i < nodesCount; i++) {
   points.push({newX: newX , newY: newY});
 }
 
-// TODO: sort
 points.sort(function(a, b) {
   if (a.newX < b.newX) {
     return -1;
@@ -48,7 +47,31 @@ for (var i = 0; i < points.length; i++) {
   circle.attr("fill", "#05f");
   circle.attr("stroke", "#fff");
   circle.attr("stroke-width", 2);
-  circle.attr("cursor", "pointer");
   nodes.push(circle);
 }
 
+var circle1 = paper.circle(points[0].newX, points[0].newY, 5, 5);
+circle1.attr("fill", "red");
+circle1.attr("stroke-width", 1);
+
+var nextNodeIndex = 0;
+var animated = false;
+var reverseDirection = false;
+
+setInterval(function() {
+  if (circle1.attr("cx") != points[nextNodeIndex].newX && circle1.attr("cy") != points[nextNodeIndex].newY) {
+
+  } else if (circle1.attr("cx") == points[nextNodeIndex].newX && circle1.attr("cy") == points[nextNodeIndex].newY) {
+    if (reverseDirection) {
+      nextNodeIndex--;
+    } else {
+      nextNodeIndex++;
+    }
+
+    circle1.animate({cx: points[nextNodeIndex].newX, cy: points[nextNodeIndex].newY}, 2000);
+
+    if (nextNodeIndex == nodes.length - 1 || nextNodeIndex == 0) {
+      reverseDirection = !reverseDirection;
+    }
+  }
+});
