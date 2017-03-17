@@ -50,7 +50,7 @@ for (var i = 0; i < points.length; i++) {
   nodes.push(circle);
 }
 
-var circle1 = paper.circle(points[0].newX, points[0].newY, 5, 5);
+var circle1 = paper.circle(points[0].newX, points[0].newY, 6, 6);
 circle1.attr("fill", "red");
 circle1.attr("stroke-width", 1);
 
@@ -62,6 +62,18 @@ setInterval(function() {
   if (circle1.attr("cx") != points[nextNodeIndex].newX && circle1.attr("cy") != points[nextNodeIndex].newY) {
 
   } else if (circle1.attr("cx") == points[nextNodeIndex].newX && circle1.attr("cy") == points[nextNodeIndex].newY) {
+    for (var i = 0; i < nodes.length; i++) {
+
+      if (nodes[i].attr("cx") == circle1.attr("cx") && nodes[i].attr("cy") == circle1.attr("cy")) {
+        nodes[i].animate({fill: "red", r: 9}, 500);
+        setTimeout(function() {
+          nodes[i].animate({fill: "#05f", r: 7}, 2000);
+        }, 2000);
+        break;
+      }
+
+    }
+
     if (reverseDirection) {
       nextNodeIndex--;
     } else {
