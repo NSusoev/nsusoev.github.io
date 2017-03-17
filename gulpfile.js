@@ -16,7 +16,7 @@ gulp.task('watch', ['build'], function() {
     server: "."
   });
 
-  gulp.watch('js/*.js', ['js']).on('change', browserSync.reload);
+  gulp.watch('js/*.js').on('change', browserSync.reload);
   gulp.watch('./**/*.html').on('change', browserSync.reload);
   gulp.watch('sass/*.sass', ['sass']).on('change', browserSync.reload);
 });
