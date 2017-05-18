@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nikita Susoev's personal page</title>
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikita Susoev's personal page</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="panel panel-default panel-profile">
-      <div class="panel-heading" id="top_background"></div>
-      <div class="panel-body text-center">
-        <img class="panel-profile-img" src="images/profile.JPG">
-        <h5 class="panel-title">Nikita Susoev</h5>
-        <p>Software Developer<p>
-        <a href="//github.com/nsusoev" target="_blank" class="btn btn-primary">
-          View GitHub
-        </a>
-      </div>
+    <div class="container">
+        <div class="panel panel-default panel-profile">
+            <div class="panel-heading"></div>
+            <div class="panel-body text-center">
+                <img class="panel-profile-img" src="images/profile.JPG">
+                <h5 class="panel-title">Nikita Susoev</h5>
+                <p>Software Developer
+                    <p>
+                        <a href="//github.com/nsusoev" target="_blank" class="btn btn-primary">View GitHub</a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 shell-container">
+            <div class="shell-line">nsusoev@mypc:~$ usrinfo</div>
+            <div class="user-basic-info">
+                <h2>Basic info:</h2>
+                <ul class="user-basic-info-list">
+                    <li>Name: Nikita</li>
+                    <li>Surname: Susoev</li>
+                    <li>Birthday: 27 Dec 1992</li>
+                </ul>
+            </div>
+
+            <div class="shell-line">nsusoev@mypc:~$ usredu</div>
+            <div class="user-skills">
+                <h2>Skills:</h2>
+                <ul class="user-skills-list">
+                    <li>Java, Spring / PHP / Python, Django</li>
+                    <li>SQL: PostgreSQL, Oracle</li>
+                    <li>JavaScript, jQuery, underscore, Backbone</li>
+                    <li>HTML5, CSS3, LESS / SASS, Twitter Bootstrap / Foundation</li>
+                    <li>npm, bower, Gulp</li>
+                    <li>Git</li>
+                    <li>basic skills needed to work in Unix-based systems: bash, vim, grep etc.</li>
+                </ul>
+            </div>
+
+            <div class="shell-line">nsusoev@mypc:~$ usrexp</div>
+            <div class="user-exp">
+                <h2>Work experience:</h2>
+                <ul class="user-work-exp-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="shell-line">nsusoev@mypc:~$ usredu</div>
+            <div class="user-edu">
+                <h2>Education:</h2>
+                <ul class="user-edu-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="shell-line">nsusoev@mypc:~$ contacts</div>
+            <div class="user-contacts">
+                <h2>Contacts:</h2>
+                <ul class="user-contacts-list">
+                    <li>Email: <a href="mailto: susoev.nikita@gmail.com">susoev.nikita@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="col-lg-12 cv-container">
-      <h1>About me</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aspernatur voluptate consectetur distinctio dignissimos ullam placeat repellat et ad id, autem reiciendis accusantium in praesentium saepe, incidunt eum adipisci temporibus.</p>
-
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript, jQuery, underscore, Backbone, AngularJS</li>
-        <li>HTML5, CSS3, LESS / SASS, Twitter Bootstrap / Foundation</li>
-        <li>npm, bower, Gulp</li>
-        <li>basic skills needed to work in Unix-based systems: bash, vim, grep etc.</li>
-        <li>Git</li>
-        <li>Back-end: Java, Spring / PHP</li>
-        <li>SQL: PostgreSQL, Oracle</li>
-      </ul>
-
-      <h2>Contacts</h2>
-      <ul>
-        <li>Email: <a href="mailto: susoev.nikita@gmail.com">susoev.nikita@gmail.com</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/raphael/raphael.min.js"></script>
-  <script src="js/tools.js"></script>
-  <script src="js/main.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/raphael/raphael.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
