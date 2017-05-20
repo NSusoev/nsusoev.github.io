@@ -1,11 +1,23 @@
-.panel-profile .panel-heading {
-  height: 150px;
-  background-image: url(../images/concrete_wall.png); }
+body {
+  background: url(images/yosemite.jpg) no-repeate contain; }
 
-.panel-profile .panel-profile-img {
-  max-width: 100px;
-  margin-top: -70px;
-  margin-bottom: 5px;
-  border: 3px solid #fff;
-  border-radius: 30%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+.container .shell {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #222;
+  box-shadow: 3px 3px 15px #555; }
+
+.container .shell-container {
+  background-color: #111;
+  color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 400px;
+  overflow-y: scroll; }
+
+.container .shell-header {
+  height: 30px;
+  background-color: #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #222; }
