@@ -1,23 +1,55 @@
 body {
-  background: url(images/yosemite.jpg) no-repeate contain; }
+  background: url(../images/concrete_wall.png) repeat; }
 
 .container .shell {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border: 1px solid #222;
-  box-shadow: 3px 3px 15px #555; }
-
-.container .shell-container {
-  background-color: #111;
-  color: #eee;
   margin-left: auto;
   margin-right: auto;
-  max-height: 400px;
-  overflow-y: scroll; }
+  max-width: 700px;
+  margin-top: 10%; }
 
 .container .shell-header {
   height: 30px;
-  background-color: #eee;
+  background-color: #f1f1f0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom: 1px solid #222; }
+  position: relative; }
+
+.container .shell-header .circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  top: 7px; }
+
+.container .shell-header .circle.circle-red {
+  left: 10px;
+  background-color: #fc5753;
+  border-color: #df4a47; }
+
+.container .shell-header .circle.circle-yellow {
+  left: 30px;
+  background-color: #fdbc40;
+  border-color: #dfa23b; }
+
+.container .shell-header .circle.circle-green {
+  left: 50px;
+  background-color: #33c748;
+  border-color: #28aa36; }
+
+.container .shell-container {
+  background-color: #212121;
+  color: #c9ced0;
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 5px 5px; }
+
+.container .shell-container h2,
+.container .shell-container ul {
+  margin-left: 15px; }
+
+.container .shell-container h2 {
+  margin-bottom: 5px; }
