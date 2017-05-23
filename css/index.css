@@ -9,21 +9,14 @@ body {
   max-width: 700px;
   margin-top: 10%; }
 
-.container .shell .shell-line {
-  display: inline-block; }
-
-.container .shell .shell-line::after {
-  content: " ";
-  display: inline-block;
-  width: 8px;
-  height: 16px;
+.container .shell .shell-line .typed-cursor {
   background-color: #c9ced0;
-  border: 1px solid #c9ced0;
-  margin-left: 2px;
-  margin-bottom: -3px; }
+  border: 2px solid #c9ced0;
+  animation: cursorblink 1.2s infinite;
+  margin-left: 2px; }
 
-.container .shell .shell-line.blink::after {
-  animation: cursorblink 1.2s infinite; }
+.container .shell .shell-line .command-text {
+  margin-left: 3px; }
 
 .container .shell-header {
   height: 30px;
