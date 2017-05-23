@@ -22,6 +22,9 @@ body {
   margin-left: 2px;
   margin-bottom: -3px; }
 
+.container .shell .shell-line.blink::after {
+  animation: cursorblink 1.2s infinite; }
+
 .container .shell-header {
   height: 30px;
   background-color: #f1f1f0;
@@ -66,3 +69,11 @@ body {
 
 .container .shell-container h2 {
   margin-bottom: 5px; }
+
+@keyframes cursorblink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
