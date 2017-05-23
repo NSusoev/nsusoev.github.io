@@ -19,6 +19,21 @@ var mainModule = (function() {
         cursor.parentNode.removeChild(cursor);
     };
 
+    var makeContentBlockIdByCommandNumber = function(commandNumber) {
+        return shellCommandsList[commandNumber] + "_content";
+    };
+
+    var makeContentBlockVisible = function(commandNumber) {
+        var block = document.getElementById(makeContentBlockIdByCommandNumber(commandNumber));
+        block.className = block.className.split(" ")[0];
+    };
+
+    var makeShellLineVisible = function(commandNumber) {
+        var line = shellLines[commandNumber];
+        var classes = line.className.split(" ");
+        line.className = classes[0] + " " + classes[1];
+    };
+
     var typeShellCommand = function(shellCommandsList, commandIndex) {
         wordTypingInProcess = true;
         Typed.new('#' + shellCommandsList[commandIndex], {
@@ -27,8 +42,10 @@ var mainModule = (function() {
             startDelay: 2000,
             callback: function() {
                 removeCursor(currentCommandIndex);
+                makeContentBlockVisible(currentCommandIndex);
                 currentCommandIndex++;
                 wordTypingInProcess = false;
+                makeShellLineVisible(currentCommandIndex);
 
                 if (currentCommandIndex === shellCommandsList.length) {
                     clearInterval(shellIntervalID);
