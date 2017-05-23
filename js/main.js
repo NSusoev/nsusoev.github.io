@@ -32,6 +32,10 @@ var mainModule = (function() {
 
                 if (currentCommandIndex === shellCommandsList.length) {
                     clearInterval(shellIntervalID);
+                    Typed.new('#end', {
+                        strings: [""],
+                        typeSpeed: 50
+                    });
                 }
             }
         });
